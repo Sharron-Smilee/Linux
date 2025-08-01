@@ -1,0 +1,32 @@
+LINUX Commands
+--------------
+pwd -> gives the "present working directory" path
+date -> gives date and time
+clear -> clears the screen
+exit -> exits or quits the session
+--------------------------------------------------------
+echo -> gives or repeats or echoes the same content
+echo SS
+SS (output)
+--------------------------------------------------------
+ls -> shows the number of of files present in the directory
+ls -l -> shows the number and gives the list of files present in the directory
+ls -la -> shows the number and gives the list of files along with hidden files present in the directory
+ls -lr -> gives the list in reverse order
+ls -lt -> gives the latest files list in top
+ls -ltr -> gives the latest files at the bottom (top reverse)
+--------------------------------------------------------
+touch sample.txt -> creates "sample.txt" document
+cat > sample.txt -> inserting or typing the content into the document. 
+Type text - Enter - Click ctrl+d to save
+cat >> sample.txt -> appending the content into the document without deleting the previous content 
+--------------------------------------------------------
+cp <source.txt> <destination_Folder> -> COPIES file from source to destination folder
+--------------------------------------------------------
+mv <source.txt> <destination_Folder> -> CUTS or MOVES file from source to destination folder
+--------------------------------------------------------
+mkdir <folder_name> -> for creating or making directory / folder 
+rmdir <folder_name> -> for deleting the empty directory / folder
+rm sample.txt -> REMOVES or DELETES file
+rm -rf <directory_path> -> FORCEfully REMOVES or DELETES directory along with the files in it 
+--------------------------------------------------------
