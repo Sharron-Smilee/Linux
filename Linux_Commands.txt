@@ -139,3 +139,23 @@ output: VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
 ex: to show any running logs from a session
 tail -f <log-file>
 --------------------------------------------------------
+FIND Command:
+find <where_to_search> -name <filename>
+* is used when we don't remember what comes after that
+ex: fil* or *name etc...
+
+ex 1: to search a file in current directory, we use dot(.) else we use slash (/)
+sharronsmilee@Maya CLANGARM64 ~/Desktop/DevSecOps
+$ find . -name "Lin*"
+
+Output:
+./01082025/Linux_Commands.txt
+./Linux_Commands.txt
+
+ex 2:
+sharronsmilee@Maya CLANGARM64 ~/Desktop/DevSecOps
+$ find . -name "Sam"
+
+output:
+./Sample_Users.txt
+--------------------------------------------------------
