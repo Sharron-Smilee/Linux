@@ -67,3 +67,40 @@ output: Sharron-Smilee
 ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | cut -d "/" -f8
 output: Linux_Commands.txt
 --------------------------------------------------------
+AWK Command: this AWK command is also used to find the word from a file just like CUT command
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | awk -F "/" '{print $1F}'
+output: https:
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | awk -F "/" '{print $4F}'
+output: Sharron-Smilee
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | awk -F "/" '{print $4F,$NF}'
+output: Sharron-Smilee Linux_Commands.txt
+
+Let's consider a file as "Sample_Users.txt" 
+SS:user1:asas/qwq/df
+SU:user2:jgjhj/hfsddh/etyye:shdjhfghjg
+VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
+
+ex: to find the name of the user:
+awk -F ":" {print $1F} Sample_Users.txt
+output:
+SS
+SU
+VJS
+
+ex: to find the name & number of the user:
+awk -F ":" {print $1F,$2F} Sample_Users.txt
+output:
+SS user1
+SU user2
+VJS user3
+
+ex: to find the number & name of the user:
+awk -F ":" {print $1F,$2F} Sample_Users.txt
+output:
+user1 SS
+user2 SU
+user3 VJS
+--------------------------------------------------------
