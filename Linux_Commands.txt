@@ -30,3 +30,8 @@ rmdir <folder_name> -> for deleting the empty directory / folder
 rm sample.txt -> REMOVES or DELETES file
 rm -rf <directory_path> -> FORCEfully REMOVES or DELETES directory along with the files in it 
 --------------------------------------------------------
+Downloading & viewing a file from a website:
+wget <URL> -> to download a file
+curl <URL> -> to view the file 
+curl -L -o "<URL>" -> to download the file from a website using GIT Bash
+--------------------------------------------------------
