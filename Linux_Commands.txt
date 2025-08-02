@@ -108,3 +108,34 @@ user1 SS
 user2 SU
 user3 VJS
 --------------------------------------------------------
+HEAD & TAIL commands:
+
+Head - to give the top 10 list
+Tail - to give the bottom 10 list
+
+cat <filename> | head
+
+Let's consider a file as "Sample_Users.txt" 
+SS:user1:asas/qwq/df
+SU:user2:jgjhj/hfsddh/etyye:shdjhfghjg
+VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
+
+ex: to give top 10
+cat Sample_Users.txt | head
+
+output: since the file contains only 3 lines, it gives only that otherwise it gives to 10 specifically
+SS:user1:asas/qwq/df
+SU:user2:jgjhj/hfsddh/etyye:shdjhfghjg
+VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
+
+ex: to give top 1
+cat Sample_Users.txt | head -n1
+output: SS:user1:asas/qwq/df
+
+ex: to give bottom 1
+cat Sample_Users.txt | tail -n1
+output: VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
+
+ex: to show any running logs from a session
+tail -f <log-file>
+--------------------------------------------------------
