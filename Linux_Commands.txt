@@ -35,3 +35,35 @@ wget <URL> -> to download a file
 curl <URL> -> to view the file 
 curl -L -o "<URL>" -> to download the file from a website using GIT Bash
 --------------------------------------------------------
+grep -> search a word in the document
+grep <word_to_find> <filename>
+--------------------------------------------------------
+using grep command along with pipe "|" symbol
+pipe "|" symbol is used to take the output of one command as a input to the next command
+
+ex: to search a word from a text document
+cat sample.txt | grep <word_to_find>
+--------------------------------------------------------
+CUT command: used to cut the word and give it as a output
+ex: to give the filename from a URL
+
+echo <URL> | cut -d "/" -f1 
+1. echo gives the URL as output
+2. pipe "|" is used to take the output as a input to the next command i.e., to the CUT command
+3. cut is used to pick or select only the desired text
+4. -d -> delimiter
+5. "/" -> here slash is used as a delimiter in the URL
+6. f1 -> fragment 1 - means 1st word before the 1st delimiter. words between the delimiters are counted as 1,2,3 etc..
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | cut -d "/" -f1
+output: https:
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | cut -d "/" -f1-3
+output: https://github.com
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | cut -d "/" -f4
+output: Sharron-Smilee
+
+ex: echo https://github.com/Sharron-Smilee/Linux/blob/main/Linux_Commands.txt | cut -d "/" -f8
+output: Linux_Commands.txt
+--------------------------------------------------------
