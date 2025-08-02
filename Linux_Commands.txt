@@ -83,6 +83,10 @@ SS:user1:asas/qwq/df
 SU:user2:jgjhj/hfsddh/etyye:shdjhfghjg
 VJS:user3:jdgfjsfy/djfggfdhj:jgdsjhfh
 
+awk -F "<delimiter>" {print $1F} <filename>
+-F -> fragment
+$1F -> fragment number
+
 ex: to find the name of the user:
 awk -F ":" {print $1F} Sample_Users.txt
 output:
