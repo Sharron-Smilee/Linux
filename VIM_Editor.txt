@@ -1,0 +1,21 @@
+VIM - Visually IMproved
+-----------------------
+VIM editor syntax:
+vim <filename> -> to edit a file
+cat <filename> -> to view a file
+-----------------------
+VIM editor - 3 modes
+1. ESC -> to come back to the previous mode
+2. Command (:) -> used to give commands for saving or editing or for quitting the editor
+3. INSERT (i) -> used to insert content into the file
+--------------------------------------------------------------------------------------------
+ex: to open & edit an existing file
+
+vim <filename>
+INSERT (i) -> type something -> ESC -> Command (:) -> Enter
+--------------------------------------------------------------------------------------------
+Commands (:) - Colon is used to give the commands
+:q -> for quitting the editor
+:wq -> write and quit i.e., save and quit
+:q! -> when we enter something in the file but don't want to save it
+--------------------------------------------------------------------------------------------
